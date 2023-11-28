@@ -1,0 +1,69 @@
+import React,{useState, useContext} from 'react'
+import bangle from "../images/bangle.jpg";
+import ring from "../images/ring.jpg"
+import neck from "../images/neck.jpg"
+import CreateContext from './context/CreateContext';
+const Items = () => {
+  const GlobalObj = useContext(CreateContext);
+  return (
+    <div>
+       <div
+        style={{ textAlign: "center", fontSize: "30px", fontWeight: "bold" }}
+      >
+        All Items
+      </div>
+      <div className="cardContainer">
+        <div className="card">
+          <div>
+            <img style={{ height: "160px", width: "100%" }} src={bangle} />
+          </div>
+          <div>
+            <h3>Bangle</h3>
+          </div>
+          <div>
+            <h3>$ 200</h3>
+          </div>
+          <div>
+            <button onClick={()=>{
+              GlobalObj.setBangleObj(...GlobalObj.BangleObj,GlobalObj.BangleObj.quantity+1,GlobalObj.BangleObj.price+200)
+            }}>add to cart</button>
+          </div>
+        </div>
+        <div className="card">
+          <div>
+            <img style={{ height: "160px", width: "100%" }} src={ring} />
+          </div>
+          <div>
+            <h3>Ring</h3>
+          </div>
+          <div>
+            <h3>$ 100</h3>
+          </div>
+          <div>
+            <button onClick={()=>{
+              GlobalObj.setBangleObj(...GlobalObj.RingObj,GlobalObj.RingObj.quantity+1,GlobalObj.RingObj.price+100)
+            }}>add to cart</button>
+          </div>
+        </div>
+        <div className="card">
+          <div>
+            <img style={{ height: "160px", width: "100%" }} src={neck} />
+          </div>
+          <div>
+            <h3>Necklace</h3>
+          </div>
+          <div>
+            <h3>$ 1000</h3>
+          </div>
+          <div>
+            <button onClick={()=>{
+              GlobalObj.setBangleObj(...GlobalObj.NecklaceObj,GlobalObj.NecklaceObj.quantity+1,GlobalObj.NecklaceObj.price+1000)
+            }}>add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Items
