@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.9995bcef.css",
+    "main.js": "/shopping-cart/static/js/main.16454f37.js",
+    "static/media/neck.jpg": "/shopping-cart/static/media/neck.3282fa3c99a1e55c3649.jpg",
+    "static/media/ring.jpg": "/shopping-cart/static/media/ring.2b725939579732e65bfc.jpg",
+    "static/media/bangle.jpg": "/shopping-cart/static/media/bangle.45af9571a89291a95ab5.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.9995bcef.css.map": "/shopping-cart/static/css/main.9995bcef.css.map",
+    "main.16454f37.js.map": "/shopping-cart/static/js/main.16454f37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9995bcef.css",
+    "static/js/main.16454f37.js"
+  ]
+}
